@@ -1,0 +1,10 @@
+<header>
+  <div class="container nav-container">
+    <div class="logo">Huynh Tan Long</div>
+    <nav class="nav-links">
+      @for (item of navItems; track item.label) {
+        <a [href]="item.link">{{ item.label }}</a>
+      }
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section__title">Contact</h2>
+    <div class="contact-grid">
+      @for (method of contactMethods; track method.label) {
+        <div class="contact-card">
+          <h3>{{ method.label }}</h3>
+          <a [href]="method.link" [attr.target]="method.isExternal ? '_blank' : null">
+            {{ method.value }}
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>

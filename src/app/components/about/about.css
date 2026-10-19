@@ -1,0 +1,31 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-text ul {
+  list-style-position: inside;
+  color: var(--text-muted);
+  padding-left: 0;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-spacer {
+    display: none;
+  }
+}
